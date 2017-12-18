@@ -54,6 +54,7 @@ import 'core-js/es7/reflect';
 
 
 
+import 'handsontable';
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
  */
