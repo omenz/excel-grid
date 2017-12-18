@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import Handsontable from 'handsontable';
 
 @Component({
@@ -7,7 +7,6 @@ import Handsontable from 'handsontable';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
   settings = {
     data: Handsontable.helper.createSpreadsheetData(200, 50),
     colWidths: 100,
@@ -18,6 +17,8 @@ export class AppComponent {
     colHeaders: true,
     rowHeaders: true,
     manualColumnResize: true,
-    manualRowResize: true
+    manualRowResize: true,
+    manualColumnMove: true,
+    manualRowMove: true
   };
 }
