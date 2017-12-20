@@ -40,7 +40,7 @@ export class AppComponent {
 
   private static conditionalRenderer(instance, td, row, col, prop, value, cellProperties) {
     Handsontable.renderers.TextRenderer.apply(this, arguments);
-    if (value.indexOf('10') !== -1 || value.indexOf('G') !== -1) {
+    if (value && (value.indexOf('10') !== -1 || value.indexOf('G') !== -1)) {
       td.style.color = 'red';
     }
   }
